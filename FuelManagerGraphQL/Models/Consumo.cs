@@ -19,7 +19,7 @@ namespace FuelManagerGraphQL.Models
         [Required]
         public int VeiculoId { get; set; }
 
-        public Veiculo Veiculo { get; set; }
+        public Veiculo? Veiculo { get; set; }
     }
 
     public enum TipoCombustivel

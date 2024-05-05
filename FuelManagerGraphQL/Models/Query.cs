@@ -9,6 +9,10 @@
         {
             return _context.Veiculos;
         }
+
+        [UseProjection]
+        [UseFiltering]
+        [UseSorting]
         public IQueryable<Consumo> Consumos([Service] AppDbContext _context)
         {
             return _context.Consumos;
